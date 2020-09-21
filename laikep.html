@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi kép</title>
+</head>
+<body>
+<script>
+    let month = +prompt("nhập số tháng, lãi suất là 10% ");
+    let money = +prompt("nhập số tiền (là tiền gửi) ");
+    for (let i = 1; i <= month; i++) {
+        money = money + money * 0.1;
+    }
+    alert(money);
+</script>
+</body>
+</html>

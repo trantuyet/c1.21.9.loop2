@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonaci</title>
+</head>
+<body>
+<input type="number" id="num"> số
+<button onclick="Count()"> Tính</button>
+<p id="result"></p>
+<script>
+    function Count() {
+        let num = +document.getElementById('num').value ;
+        let c = 0;
+        let a =0;
+        let b =1;
+        let mid ;
+        let result =0;
+        while (c<num) {
+            result = a +b ;
+            mid = a;
+            a = b;
+            b = mid + a;
+            document.write(result+ "; ");
+            c++
+        }
+    }
+</script>
+</body>
+</html>
